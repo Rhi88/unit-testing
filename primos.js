@@ -8,15 +8,18 @@ class Primos
          {
           if(isNaN(n1))
           {
-              return "N1 no es numero";
+              console.log("N1 no es numero");
+              return 0;
           }
           if(isNaN(n2))
           {
-              return "N2 no es un numero";
+              console.log("N2 no es un numero")
+              return 0;
           }
           if(isNaN(n3))
           {
-              return "N3 no es un numero";
+              console.log("N3 no es un numero");
+              return 0;
           }
             {
 	            if(n1==(n2+n3))

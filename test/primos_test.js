@@ -44,8 +44,19 @@ describe ('primo',function (){
         assert.equal(expected,actual);
     });
 
-    it ('El primer dato es numero',function()
+    it ('El primer dato no es numero',function()
     {
-        assert.typeOf(primos.añadir(5,3,'n3'),'number');
+        assert.typeOf(primos.añadir('n1',2,4),'number');
     });
+
+    it ('El segundo dato no es numero',function()
+    {
+        assert.typeOf(primos.añadir(2,'n2',4),'number');
+    });
+    
+    it ('El tercer dato no es numero',function()
+    {
+        assert.typeOf(primos.añadir(2,2,'n3'),'number');
+    });
+    
 });
